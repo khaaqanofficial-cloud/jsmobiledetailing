@@ -10,7 +10,10 @@ import santafe from "@/assets/hero-santafe.png";
 import svcInterior from "@/assets/svc-interior.jpg";
 import svcCeramic from "@/assets/svc-ceramic.jpg";
 import svcPower from "@/assets/svc-power.jpg";
-import svcSofa from "@/assets/svc-sofa.jpg";
+import svcFullDetail from "@/assets/svc-fulldetail.jpg";
+import svcHandWash from "@/assets/svc-handwash.jpg";
+import svcPaint from "@/assets/svc-paint.jpg";
+import svcCommercial from "@/assets/svc-commercial.jpg";
 import logo from "@/assets/logo.png";
 
 export const Route = createFileRoute("/")({
@@ -31,14 +34,13 @@ const TEL = "tel:14847643361";
 const SMS = "sms:14847643361";
 
 const services = [
-  { name: "Full Detail", icon: "✦" },
+  { name: "Full Detail", icon: "✦", bg: svcFullDetail },
   { name: "Interior Shampoo", icon: "🧴", bg: svcInterior },
-  { name: "Hand Wash & Wax", icon: "✺" },
-  { name: "Paint Correction", icon: "◉" },
+  { name: "Hand Wash & Wax", icon: "✺", bg: svcHandWash },
+  { name: "Paint Correction", icon: "◉", bg: svcPaint },
   { name: "Ceramic Coating", icon: "◈", bg: svcCeramic },
   { name: "Power Washing", icon: "⚡", bg: svcPower },
-  { name: "Sofa & Upholstery", icon: "▤", bg: svcSofa },
-  { name: "Commercial Vehicles", icon: "▶" },
+  { name: "Commercial Vehicles", icon: "▶", bg: svcCommercial },
 ];
 
 const reviews = [
@@ -128,8 +130,8 @@ function Services() {
             <div key={s.name} className="relative overflow-hidden rounded-xl border border-border bg-surface aspect-square sm:aspect-[4/3] p-4 sm:p-5 flex flex-col justify-end">
               {s.bg && (
                 <>
-                  <img src={s.bg} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover opacity-40" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#080C14] via-[#080C14]/70 to-transparent" />
+                  <img src={s.bg} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#080C14] via-[#080C14]/60 to-[#080C14]/10" />
                 </>
               )}
               <div className="relative">
