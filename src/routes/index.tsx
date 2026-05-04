@@ -11,7 +11,7 @@ import svcInterior from "@/assets/svc-interior.jpg";
 import svcCeramic from "@/assets/svc-ceramic.jpg";
 import svcPower from "@/assets/svc-power.jpg";
 import svcSofa from "@/assets/svc-sofa.jpg";
-import detailerAction from "@/assets/detailer-action.jpg";
+import logo from "@/assets/logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
