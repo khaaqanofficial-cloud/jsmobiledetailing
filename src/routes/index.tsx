@@ -11,7 +11,7 @@ import svcInterior from "@/assets/svc-interior.jpg";
 import svcCeramic from "@/assets/svc-ceramic.jpg";
 import svcPower from "@/assets/svc-power.jpg";
 import svcSofa from "@/assets/svc-sofa.jpg";
-import detailerAction from "@/assets/detailer-action.jpg";
+import logo from "@/assets/logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -59,8 +59,7 @@ function Header() {
     <header className="sticky top-0 z-50 bg-app/85 backdrop-blur border-b border-border">
       <div className="mx-auto max-w-6xl px-4 h-14 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2">
-          <span className="w-8 h-8 rounded-md bg-accent-blue text-white font-display text-lg flex items-center justify-center">JS</span>
-          <span className="font-display tracking-wider text-sm hidden sm:block">JS MOBILE DETAILING</span>
+          <img src={logo} alt="JS Mobile Car Shampoo & Detailing" className="h-9 w-auto" />
         </a>
         <a href={TEL} className="bg-accent-blue text-white font-bold text-xs sm:text-sm px-4 py-2 rounded-full shadow-glow">
           📞 CALL NOW
@@ -222,7 +221,7 @@ function HowItWorks() {
       <div className="mx-auto max-w-6xl">
         <p className="text-accent-blue font-bold tracking-widest text-xs">PROCESS</p>
         <h2 className="font-display text-4xl sm:text-6xl mt-2 mb-8">HOW IT WORKS</h2>
-        <img src={detailerAction} alt="JS detailer at work" loading="lazy" className="w-full aspect-[16/9] object-cover rounded-2xl border border-border" />
+        
         <div className="mt-6 grid sm:grid-cols-2 gap-3">
           {steps.map((s) => (
             <div key={s.n} className="border border-border bg-surface rounded-xl p-5">
@@ -286,10 +285,7 @@ function Footer() {
     <footer className="py-12 px-5 border-t border-border">
       <div className="mx-auto max-w-6xl grid sm:grid-cols-3 gap-8">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="w-9 h-9 rounded-md bg-accent-blue text-white font-display text-lg flex items-center justify-center">JS</span>
-            <span className="font-display tracking-wider">MOBILE DETAILING LLC</span>
-          </div>
+          <img src={logo} alt="JS Mobile Car Shampoo & Detailing" className="h-12 w-auto" />
           <p className="text-white/60 text-sm mt-3">Pro-grade mobile detailing serving Allentown, PA & surrounding areas.</p>
         </div>
         <div>
