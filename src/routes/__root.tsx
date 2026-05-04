@@ -39,8 +39,8 @@ export const Route = createRootRoute({
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "JS Mobile Car Shampoo & Detailing — Allentown, PA" },
       { name: "twitter:description", content: "Premium mobile detailing in Allentown, PA. Cars, trucks, semis, sofas & homes. We come to you. Call (484) 764-3361." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3ed8ca44-4b93-461b-8ed9-45c2d48dfd04" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3ed8ca44-4b93-461b-8ed9-45c2d48dfd04" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3W1sGnVjyyYxFkK6S6a1LzoEKV63/social-images/social-1777914869785-Screenshot_2026-05-04_221414.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3W1sGnVjyyYxFkK6S6a1LzoEKV63/social-images/social-1777914869785-Screenshot_2026-05-04_221414.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
