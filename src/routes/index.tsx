@@ -10,7 +10,10 @@ import santafe from "@/assets/hero-santafe.png";
 import svcInterior from "@/assets/svc-interior.jpg";
 import svcCeramic from "@/assets/svc-ceramic.jpg";
 import svcPower from "@/assets/svc-power.jpg";
-import svcSofa from "@/assets/svc-sofa.jpg";
+import svcFullDetail from "@/assets/svc-fulldetail.jpg";
+import svcHandWash from "@/assets/svc-handwash.jpg";
+import svcPaint from "@/assets/svc-paint.jpg";
+import svcCommercial from "@/assets/svc-commercial.jpg";
 import logo from "@/assets/logo.png";
 
 export const Route = createFileRoute("/")({
@@ -31,14 +34,13 @@ const TEL = "tel:14847643361";
 const SMS = "sms:14847643361";
 
 const services = [
-  { name: "Full Detail", icon: "✦" },
+  { name: "Full Detail", icon: "✦", bg: svcFullDetail },
   { name: "Interior Shampoo", icon: "🧴", bg: svcInterior },
-  { name: "Hand Wash & Wax", icon: "✺" },
-  { name: "Paint Correction", icon: "◉" },
+  { name: "Hand Wash & Wax", icon: "✺", bg: svcHandWash },
+  { name: "Paint Correction", icon: "◉", bg: svcPaint },
   { name: "Ceramic Coating", icon: "◈", bg: svcCeramic },
   { name: "Power Washing", icon: "⚡", bg: svcPower },
-  { name: "Sofa & Upholstery", icon: "▤", bg: svcSofa },
-  { name: "Commercial Vehicles", icon: "▶" },
+  { name: "Commercial Vehicles", icon: "▶", bg: svcCommercial },
 ];
 
 const reviews = [
