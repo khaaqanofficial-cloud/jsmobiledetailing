@@ -285,10 +285,7 @@ function Footer() {
     <footer className="py-12 px-5 border-t border-border">
       <div className="mx-auto max-w-6xl grid sm:grid-cols-3 gap-8">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="w-9 h-9 rounded-md bg-accent-blue text-white font-display text-lg flex items-center justify-center">JS</span>
-            <span className="font-display tracking-wider">MOBILE DETAILING LLC</span>
-          </div>
+          <img src={logo} alt="JS Mobile Car Shampoo & Detailing" className="h-12 w-auto" />
           <p className="text-white/60 text-sm mt-3">Pro-grade mobile detailing serving Allentown, PA & surrounding areas.</p>
         </div>
         <div>
