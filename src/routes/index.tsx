@@ -130,8 +130,8 @@ function Services() {
             <div key={s.name} className="relative overflow-hidden rounded-xl border border-border bg-surface aspect-square sm:aspect-[4/3] p-4 sm:p-5 flex flex-col justify-end">
               {s.bg && (
                 <>
-                  <img src={s.bg} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover opacity-40" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#080C14] via-[#080C14]/70 to-transparent" />
+                  <img src={s.bg} alt="" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#080C14] via-[#080C14]/60 to-[#080C14]/10" />
                 </>
               )}
               <div className="relative">
